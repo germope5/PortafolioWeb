@@ -19,7 +19,7 @@ Una demostración del Portafolio Web corriendo en un domionio.
 En la parte de abajo se encuentra un listado de las herramientas que utilicé para construír el portafolio,
 y las funciones que realice con cada una de ellas.
 
-- [Ion Icons] (https://ionic.io/ionicons) Para el menú de barra de Hamburguesa.
+- [Ion Icons](https://ionic.io/ionicons) Para el menú de barra de Hamburguesa.
 - [Drawkit](https://www.drawkit.io/) Para las ilustraciones e imágenes en el portafolio.
 - [Icon8](https://icons8.com/) Para los íconos animados y los íconos de habilidades.
 - [Animate CSS](https://animate.style/) Para la biografía animada de texto sobre mí.
