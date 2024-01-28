@@ -68,16 +68,18 @@ nav {
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
-  box-shadow: 0 3px 5px rgba(231, 230, 230, 0.3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Improved box-shadow */
 }
 
 nav h1 {
   color: var(--primary-color);
+  font-size: 1.8rem; /* Adjusted font size */
 }
 
 nav a {
   color: var(--primary-color);
   transition: var(--transition);
+  font-size: 1rem; /* Adjusted font size */
 }
 nav a:hover {
   color: var(--secondary-color);
@@ -99,7 +101,7 @@ nav ul li {
   border: 0;
   background-color: transparent;
   cursor: pointer;
-  display: none;
+  display: block;
 }
 /* Navbar ends */
 
@@ -112,10 +114,12 @@ nav ul li {
   max-width: 68.75rem;
   margin: auto;
   background-color: var(--bg-color);
+  gap: 2rem;
 }
 
 .bio-title {
   color: var(--primary-color);
+  font-size: 2rem; /* Adjusted font size */
 }
 
 .hero img {
@@ -123,12 +127,19 @@ nav ul li {
   width: 30rem;
   margin-top: 5rem;
   border-radius: 15px;
+  max-width: 100%; /* Responsive image */
+  height: auto;
+  border-radius: 0.8rem;
 }
 
 .bio {
   width: 35rem;
   padding: 0.625rem;
   border-radius: 15px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  width: 100%; /* Full-width on small screens */
+  padding: 1rem;
+  border-radius: 0.8rem;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
@@ -137,26 +148,29 @@ nav ul li {
 }
 
 .bio p {
-  line-height: var(--line-height);
+  /* line-height: var(--line-height); */
   padding: 0.3rem 0;
+  line-height: 1.8rem; /* Adjusted line height */
 }
 /* Hero section ends */
 
 /* More about */
 .more-about {
   background-color: var(--bg-color);
-  padding: 1rem 6rem;
+  padding: 1rem 1.5rem; /* Adjusted padding */
 }
 
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
-  color: var(--primary-color)
+  color: var(--primary-color);
+  font-size: 1.8rem; /* Adjusted font size */
 }
 
 .more-about p {
-  line-height: var(--line-height);
+  /* line-height: var(--line-height); */
   padding: 0.4rem;
+  line-height: 1.8rem; /* Adjusted line height */
 }
 /* More about ends */
 
@@ -165,12 +179,13 @@ nav ul li {
   max-width: 68.75rem;
   margin: auto;
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .skill-header {
   margin-bottom: 1rem;
   color: var(--primary-color);
+  font-size: 1.8rem; /* Adjusted font size */
 }
 
 .skills-wrapper img {
@@ -178,38 +193,54 @@ nav ul li {
 }
 
 .icon {
-  width: 11.875rem;
-  height: 11.25rem;
+  width: 7rem;
+  height: 6.5rem;
 }
 /* Skills section ends */
 
 /* Projects section */
 .projects {
   background-color: var(--bg-color);
-  padding: 32px 0;
+  padding: 2rem 1rem; /* Adjusted padding */
   margin-top: 2rem;
 }
 
 .project-pic {
-  width: 85%;
-  height: 100%;
+  width: 100%; /* Responsive image */
+  height: 250px;
 }
 
 .projects-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  width: 100%; /* Full-width on small screens */
 }
 
 .projects-title {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 1.8rem; /* Adjusted font size */
 }
 
 .project-container {
   text-align: center;
-  width: 21.875rem;
   padding: 1rem;
+  width: 100%; /* Full-width on small screens */
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  /* Añadido: Fija el alto de los contenedores de proyectos */
+  height: 32rem; /* Puedes ajustar la altura según tus preferencias */
+
+
+}
+
+.project-link {
+  margin-top: auto;
 }
 
 .project-container p {
@@ -219,6 +250,7 @@ nav ul li {
 
 .project-title {
   margin-bottom: var(--bottom-margin);
+  font-size: 1.5rem; /* Adjusted font size */
 }
 
 .project-details {
@@ -236,13 +268,14 @@ nav ul li {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
   color: var(--primary-color);
+  font-size: 1.8rem; /* Adjusted font size */
 }
 
 .contact-form-container {
-  max-width: 40.75rem;
+  max-width: 25rem; /* Adjusted max-width */
   margin: 0 auto;
-  padding: 0.938rem;
-  border-radius: 5px;
+  padding: 1rem;
+  border-radius: 0.8rem;
   box-shadow: 0 3px 10px var(--secondary-shadow);
 }
 
@@ -253,8 +286,14 @@ nav ul li {
 }
 
 .contact-form-container textarea {
-  min-height: 6.25rem;
+  min-height: 8rem; /* Adjusted min-height */
   font-size: 14px;
+}
+
+.input-field {
+  padding: 0.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .contact-form-container .input-field {
@@ -301,8 +340,8 @@ nav ul li {
   display: flex;
   flex-direction: column;
   position: fixed;
-  right: 1%;
-  bottom: 50%;
+  right: 2%;
+  bottom: 40%;
 }
 
 .socicon {
@@ -315,13 +354,13 @@ nav ul li {
 .scroll-up {
   position: fixed;
   right: 0.5%;
-  bottom: 3%;
+  bottom: 5%;
   cursor: pointer;
 }
 
 .up-arrow {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 /* Scroll to top button ends */
 
@@ -331,6 +370,7 @@ footer {
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
+  margin-top: 2rem;
 }
 /* Footer section ends */
 
@@ -381,19 +421,22 @@ footer {
   }
 
   .hero {
-    margin-top: -4rem;
+    margin-top: 0;
     flex-direction: column;
     gap: 0;
   }
 
   .hero img {
-    height: 16.5rem;
+    width: 100%; 
     width: 17rem;
+    margin-top: 0; 
+    border-radius: 20px;
   }
 
   .bio {
     margin-top: -7rem;
-    width: 20.5rem;
+    width: 60%;
+    margin-top: 1rem;
   }
 
   .more-about {
