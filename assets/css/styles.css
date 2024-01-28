@@ -122,6 +122,17 @@ nav ul li {
   font-size: 2rem; /* Adjusted font size */
 }
 
+.hero-img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+
+}
+
+.bio:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
 .hero img {
   /* height: 32.5rem; */
   width: 30rem;
@@ -489,4 +500,28 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
+}
+
+.container:hover {
+  transform: scale(1.02); /* Ajusta el valor según tu preferencia */
+  transition: transform 0.3s ease; /* Controla la velocidad de la transición */
+}
+
+/* Aplica el efecto a los contenedores que desees */
+/* Por ejemplo, si quieres aplicarlo a todos los contenedores con la clase "project-container" */
+.project-container:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* También puedes aplicarlo a otros elementos según tus necesidades */
+/* Por ejemplo, si deseas aplicarlo a las imágenes dentro de los contenedores */
+.project-container img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.skills-wrapper img:hover {
+  transform: scale(1.09);
+  transition: transform 0.3s ease;
 }
