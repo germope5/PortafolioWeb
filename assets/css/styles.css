@@ -176,8 +176,8 @@ nav ul li {
 
 /* Skills section */
 .skills {
-  max-width: 68.75rem;
-  margin: auto;
+  max-width: 100%; /* Ajusta el ancho máximo según tu preferencia */
+  margin: auto; /* Centra los contenedores en el medio */
   text-align: center;
   margin-top: 2rem;
 }
@@ -185,16 +185,18 @@ nav ul li {
 .skill-header {
   margin-bottom: 1rem;
   color: var(--primary-color);
-  font-size: 1.8rem; /* Adjusted font size */
+  font-size: 2rem; /* Ajustado el tamaño de la fuente */
 }
 
 .skills-wrapper img {
   padding: 1.25rem;
+  width: 15rem; /* Ajustado el ancho de las imágenes */
+  height: 15rem; /* Ajustada la altura de las imágenes */
 }
 
 .icon {
-  width: 7rem;
-  height: 6.5rem;
+  width: 11rem; /* Ajustado el ancho de los contenedores de habilidades */
+  height: 10.5rem; /* Ajustada la altura de los contenedores de habilidades */
 }
 /* Skills section ends */
 
