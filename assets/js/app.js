@@ -30,3 +30,13 @@ scrollUp.addEventListener("click", () => {
   });
 });
 
+const bioTitle = document.querySelector('.bio-title');
+
+bioTitle.addEventListener('mouseover', () => {
+  bioTitle.style.transform = 'translateY(-10px)';
+});
+
+bioTitle.addEventListener('mouseout', () => {
+  bioTitle.style.transform = 'translateY(0)';
+});
+

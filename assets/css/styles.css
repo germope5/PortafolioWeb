@@ -78,7 +78,7 @@ nav {
 }
 
 .navigation li {
-  margin-right: 160px; /* Ajusta el valor según sea necesario */
+  margin-right: 100px; /* Ajusta el valor según sea necesario */
 }
 
 nav h1 {
@@ -91,6 +91,7 @@ nav a {
   position: relative; /* Añadido: posición relativa */
   transition: var(--transition);
   font-size: 1rem; /* Adjusted font size */
+  text-decoration: none;
 }
 
 .nav-link {
@@ -109,10 +110,10 @@ nav a::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2px; /* Ajusta la altura de la barra */
+  height: 3px; /* Ajusta la altura de la barra */
   background-color: #ead2a8; /* Color de la barra */
   transform: scaleX(0); /* Inicialmente la barra no es visible */
-  transform-origin: bottom right;
+  transform-origin: bottom left;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -139,7 +140,7 @@ nav ul li {
 }
 /* Navbar ends */
 
-/* Hero section */
+
 /* Hero section */
 .hero {
   display: flex;
@@ -153,7 +154,7 @@ nav ul li {
 }
 
 .hero img {
-  width: 18rem;
+  width: 16rem;
   margin-top: 2rem; /* Reducir el espacio entre la imagen y la biografía */
   border-radius: 15px;
   max-width: 100%; /* Imagen responsive */
@@ -181,9 +182,38 @@ nav ul li {
 }
 
 .bio-title {
-  color: var(--primary-color);
-  font-size: 2rem;
+color: var(--primary-color);
+  font-size: 2.5rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Asegura que el contenedor ocupe toda la altura disponible */
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bio-title:hover {
+  transform: translateY(-10px);
+}
+
+.bio-title::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: linear-gradient(to bottom, transparent 90%, #ebb75d 90%); */
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bio-title:hover::before {
+  transform: translateY(0);
 }
 
 .bio-text {
