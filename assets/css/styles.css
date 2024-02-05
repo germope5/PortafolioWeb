@@ -479,11 +479,46 @@ li {
 /* Footer section */
 footer {
   background-color: var(--bg-color);
-  padding: 1.25rem;
+  padding: 20px;
   text-align: center;
   margin: 2rem 0 0;
   margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
+
+/* Estilo para cada columna en el pie de página */
+.footer-column {
+  flex: 1;
+  margin-right: 20px; /* Ajusta el espacio entre las columnas según sea necesario */
+}
+
+/* Estilo para los íconos de redes sociales */
+.social-icons {
+  display: flex;
+  
+}
+
+.social-icons a {
+  margin-right: 12px; /* Espacio entre los íconos de redes sociales */
+
+}
+
+.social-icons a img {
+  width: 44px;
+  height: 44px;
+}
+
+/* Estilo para los enlaces de información legal y política de privacidad */
+.footer-column p a {
+  color: #333; /* Cambia el color del texto según tus preferencias */
+  text-decoration: none;
+}
+
+.footer-column p a:hover {
+  text-decoration: underline; /* Subrayar los enlaces al pasar el ratón sobre ellos */
+}
+
 /* Footer section ends */
 
 /* General (utilities) */
