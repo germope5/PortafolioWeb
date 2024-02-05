@@ -65,7 +65,8 @@ nav {
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color-nav);
   color: var(--text);
-  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
 }
 
 .navigation {
@@ -161,7 +162,8 @@ nav ul li {
 
 .hero img {
   width: 16rem;
-  margin-top: 2rem; /* Reducir el espacio entre la imagen y la biografía */
+  /* margin-top: 2rem; */
+   /* Reducir el espacio entre la imagen y la biografía */
   border-radius: 15px;
   max-width: 100%; /* Imagen responsive */
   height: auto;
@@ -178,7 +180,7 @@ nav ul li {
   height: auto;
   padding: 1rem;
   border-radius: 15px;
-  box-shadow:  0 15px 5px rgba(0, 0, 0, 0.3);
+  /* box-shadow:  0 15px 5px rgba(0, 0, 0, 0.3); */
   width: 100%; /* Full-width on small screens */
   padding: 1rem;
   border-radius: 0.8rem;
@@ -548,6 +550,50 @@ footer {
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
+}
+
+.Efecto_Horizontal {
+  view-timeline-name: --efecto-horizontal;
+  view-timeline-axis: block;
+
+  animation-timeline: --efecto-horizontal;
+  animation-name: efectoHorizontal;
+
+  animation-range: entry 15% cover 50%;
+  animation-fill-mode: both;
+}
+
+@keyframes efectoHorizontal {
+  from {
+      opacity: 0;
+      transform: translate(-100px, 0px);
+  }
+  to {
+      opacity: 1;
+      transform: translate(0px, 0px);
+  }
+}
+
+.Efecto_Vertical {
+  view-timeline-name: --efecto-vertical;
+  view-timeline-axis: block;
+
+  animation-timeline: --efecto-vertical;
+  animation-name: efectoVertical;
+
+  animation-range: entry 15% cover 50%;
+  animation-fill-mode: both;
+}
+
+@keyframes efectoVertical {
+  from {
+      opacity: 0;
+      transform: translate(0px, 100px);
+  }
+  to {
+      opacity: 1;
+      transform: translate(0px, 0px);
+  }
 }
 
 
