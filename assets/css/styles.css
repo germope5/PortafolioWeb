@@ -550,20 +550,28 @@ footer {
   nav {
     padding: 1.5rem 1rem;
   }
+
   nav ul {
     position: fixed;
     background-color: var(--bg-color);
     flex-direction: column;
     top: 86px;
-    left: 10%;
-    width: 80%;
-    text-align: center;
-    transform: translateX(120%);
+    left: 0;
+    width: 100%;
+    text-align:center;
+    transform: translateX(100%);
     transition: transform 0.5s ease-in;
+     /* Añadido para centrar horizontalmente */
+  }
+
+  nav ul.show {
+    transform: translateX(0); /* Mostrar el menú desplazándolo a 0% de la pantalla */
   }
 
   nav ul li {
-    margin: 8px;
+    margin: 10px;
+    width: 100%;
+
   }
 
   .burger-menu {
@@ -625,6 +633,27 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
+
+  nav {
+    padding: 1.5rem 1rem;
+  }
+
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 0;
+    width: 100%;
+    text-align:end;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+     /* Añadido para centrar horizontalmente */
+  }
+
+  nav ul.show {
+    transform: translateX(0); /* Mostrar el menú desplazándolo a 0% de la pantalla */
+  }
   .hero img {
     height: 16.5rem;
     width: 17rem;
