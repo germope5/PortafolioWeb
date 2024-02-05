@@ -1,7 +1,7 @@
 # Mi Portafolio Web
 Espacio para mostrar mi perfil personal: Proyectos, Experiencia, Habilidades, Contacto y mucho más
 
-![CapturaPantalla](german-shot.png)
+![CapturaPantalla](pp_ss.png)
 
 ## Autor
 
