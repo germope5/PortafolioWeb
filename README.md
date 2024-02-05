@@ -2,10 +2,10 @@
 Espacio para mostrar mi perfil personal: Proyectos, Experiencia, Habilidades, Contacto y mucho más
 
 ![CapturaPantalla](pp_ss.png)
-![CapturaPantalla](pw_ss2.png)
-![CapturaPantalla](pw_ss3.png)
-![CapturaPantalla](pw_ss4.png)
-![CapturaPantalla](pw_ss5.png)
+![CapturaPantalla2](pw-ss2.png)
+![CapturaPantalla3](pw-ss3.png)
+![CapturaPantalla4](pw-ss4.png)
+![CapturaPantalla5](pw-ss5.png)
 
 ## Autor
 
