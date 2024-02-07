@@ -327,8 +327,8 @@ li {
 /* Estilos para la imagen del proyecto */
 /* Cambiar las dimensiones de lás imágenes a uno ESTANDAR */
 .project-pic {
-  width: 80%;
-  height: auto;
+  width: 100%;
+  /* height: auto; */
   border-radius: 8px;
   display: block; /* Hacer la imagen un elemento de bloque */
   margin: 0 auto; /* Centrar horizontalmente */
