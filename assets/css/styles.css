@@ -346,20 +346,20 @@ li {
 .project-title {
   margin-top: 15px;
   font-size: 1.2rem;
-  color: #333;
+  color: var(--primary-color);
   text-align: center;
   margin-bottom: var(--bottom-margin);
   font-size: 1.5rem; /* Adjusted font size */
 }
 
 .project-container {
-  width: 33% ;/* Ajusta el ancho de cada proyecto según el número de proyectos por fila */
+  width: 400px;/* Ajusta el ancho de cada proyecto según el número de proyectos por fila */
+  height: 500px;
   background-color: #f9f9f9;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  border:2px solid #e74c3c;
 }
 
 /* Estilos al pasar el ratón sobre un proyecto */
@@ -370,7 +370,7 @@ li {
 /* Estilos para el enlace "Descubre más" */
 .project-link {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 25px;
   padding: 8px 16px;
   background-color: var(--primary-color);
   color: #fff;
