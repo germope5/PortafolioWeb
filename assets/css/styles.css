@@ -47,11 +47,9 @@ a:hover {
 
 body {
   font-family: var(--font-family);
-  background: linear-gradient(45deg, #181818 0%, #2c3e50 50%, #181818 100%);
+  background: linear-gradient(45deg, #0d1216 0%, #181818 50%, #192a3b 100%);
   color: var(--text);
 }
-
-
 
 /* CSS Resets end */
 
@@ -98,7 +96,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 /* Añadido: Barra que aparece debajo de cada sección al pasar el mouse */
@@ -110,7 +108,7 @@ nav a::after {
   left: 0;
   width: 100%;
   height: 3px; /* Ajusta la altura de la barra */
-  background-color: var(--primary-color); /* Color de la barra */
+  background-color: var(--secondary-color); /* Color de la barra */
   transform: scaleX(0); /* Inicialmente la barra no es visible */
   transform-origin: bottom left;
   transition: transform 0.3s ease-in-out;
@@ -144,107 +142,76 @@ nav ul li {
 }
 /* Navbar ends */
 
+/* Estilos para la sección de tarjeta de presentación */
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #0d1216; /* Color de fondo */
+  color: #fefefe; /* Color del texto */
+  border-radius: 15px; /* Borde redondeado */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
+  max-width: 900px; /* Ancho máximo de la tarjeta */
+  margin: auto; /* Centrar la tarjeta en la página */
+  margin-top: 25px;
+}
 
-/* Hero section */
-.hero {
+.presentacion {
+  width: 50%; /* Ancho del div presentacion */
+}
+
+.presentacion h2 {
+  font-size: 2rem; /* Tamaño de fuente para el título */
+  margin-bottom: 10px; /* Espaciado inferior del título */
+  text-align: center; /* Alineación centrada */
+}
+
+.presentacion img {
+  width: 16rem; /* Ancho de la imagen */
+  display: block; /* Para centrar horizontalmente */
+  margin: 0 auto; /* Centrar horizontalmente */
+  border-radius: 50%; /* Borde redondeado para la imagen circular */
+  margin-bottom: 20px; /* Espaciado inferior de la imagen */
+}
+
+.card .bio-title {
+  font-size: 2rem; /* Tamaño de fuente para el título */
+  margin-bottom: 10px; /* Espaciado inferior del título */
+}
+
+.card-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  margin: auto;
-  /* background: linear-gradient(45deg, #181818 0%, #2c3e50 50%, #181818 100%); Gradiente con los colores deseados */
-  gap: 2rem;
+  width: 50%; /* Ancho del contenido, ocupa la mitad de la tarjeta */
 }
 
-.hero img {
-  width: 16rem;
-  /* margin-top: 2rem; */
-   /* Reducir el espacio entre la imagen y la biografía */
-  border-radius: 15px;
-  max-width: 100%; /* Imagen responsive */
-  height: auto;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);  /* Añadimos una sombra en el borde */
+.card p {
+  font-size: 1.2rem; /* Tamaño de fuente para el texto */
+  line-height: 1.6; /* Altura de línea */
+  text-align: justify; /* Alineación justificada */
 }
-
 
 /* Styling para la sección de la biografía */
 .bio {
-  width: 35rem;
-  max-width: 100%;
-  height: auto;
-  padding: 1rem;
-  border-radius: 15px;
-  /* box-shadow:  0 15px 5px rgba(0, 0, 0, 0.3); */
-  width: 100%; /* Full-width on small screens */
-  padding: 1rem;
-  border-radius: 0.8rem;
+  width: 50%; /* Ancho del div bio */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Borde redondeado */
+  background-color: #0d1216; /* Color de fondo */
   
 }
 
 .bio-title {
-color: var(--primary-color);
-  font-size: 2.08rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%; /* Asegura que el contenedor ocupe toda la altura disponible */
-  margin-bottom: 10px;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-}
-
-.bio-title:hover {
-  transform: translateY(-10px);
-}
-
-.bio-title::before {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* background: linear-gradient(to bottom, transparent 90%, #ebb75d 90%); */
-  transform: translateY(100%);
-  transition: transform 0.3s ease-in-out;
-}
-
-.bio-title:hover::before {
-  transform: translateY(0);
+  color: var(--secondary-color);
+  font-size: 2rem; /* Tamaño de fuente para el título */
+  margin-bottom: 10px; /* Espaciado inferior del título */
+  text-align: center; /* Alineación centrada */
 }
 
 .bio-text {
-  margin: 3%;
-  font-size: larger;
-  line-height: 1.6; /* Espaciado entre líneas */
-  text-align: justify;
-  font-weight: 400; /* Grosor de la fuente */
+  font-size: 1.2rem; /* Tamaño de fuente para el texto */
+  line-height: 1.6; /* Altura de línea */
+  text-align: justify; /* Alineación justificada */
 }
-
-.bio-text strong {
-  color: #e74c3c; /* Color para las partes importantes del texto */
-}
-
-.bio-text em {
-  font-style: italic; /* Estilo cursiva para resaltar */
-}
-
-
-.bio h1 {
-  margin-bottom: var(--bottom-margin);
-}
-
-.bio p {
-  padding: 0.3rem 0;
-  line-height: 1.8rem;
-}
-/* Hero section ends */
 
 
 /* More about */
@@ -258,8 +225,9 @@ color: var(--primary-color);
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 1.8rem; /* Tamaño de fuente ajustado */
+  
 }
 
 .more-about ul {
@@ -293,7 +261,7 @@ li {
 }
 
 .skill-header {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 2rem;
   margin-bottom: 2rem; /* Ajustado el margen inferior para colocar el título más abajo */
 }
@@ -302,6 +270,7 @@ li {
   padding: 1.25rem;
   width: 15rem;
   height: 15rem;
+  background-color: var(--secondary-color);
 }
 
 .icon {
@@ -315,6 +284,7 @@ li {
 .projects {
   /* background: linear-gradient(45deg, #181818 0%, #2c3e50 50%, #181818 100%);  */
   padding: 2rem 1rem; /* Adjusted padding */
+  color: var(--secondary-color);
   /* margin-top: 2rem; */
   
 }
@@ -341,7 +311,7 @@ li {
 .project-title {
   margin-top: 15px;
   font-size: 1.2rem;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-align: center;
   margin-bottom: var(--bottom-margin);
   font-size: 1.6rem;
@@ -350,7 +320,7 @@ li {
 .projects-title {
   margin-top: 15px;
   font-size: 1.2rem;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-align: center;
   margin-bottom: var(--bottom-margin);
   font-size: 2.08rem;
@@ -379,7 +349,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   padding: 8px 16px;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -419,7 +389,7 @@ li {
 .contact h2 {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 1.8rem; /* Adjusted font size */
 }
 
@@ -434,7 +404,7 @@ li {
 .contact-form-container label {
   line-height: 2.7em;
   font-weight: var(--bold-font);
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .contact-form-container textarea {
@@ -455,16 +425,16 @@ li {
   padding-bottom: 10px;
   border-radius: 5px;
   border: none;
-  border: 2px outset var(--primary-color);
+  border: 2px outset var(--secondary-color);
   font-size: 0.875rem;
   outline: none;
   background-color: var(--bg-color);
-  color: var(--primary-color);
+  color: var(--text);
 }
 
 .input-field::placeholder {
   padding: 0.5rem;
-  color: var(--primary-color);
+  color: var(--text);
 }
 
 .submit-btn {
@@ -472,7 +442,7 @@ li {
   padding: 10px;
   margin: 10px 0;
   background-color: var(--bg-color);
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--secondary-color);
   border-radius: 5px;
   font-size: 1rem;
   font-weight: var(--bold-font);
@@ -481,8 +451,8 @@ li {
 }
 
 .submit-btn:hover {
-  background-color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
   cursor: pointer;
 }
 /* Contacts section ends */
@@ -759,3 +729,17 @@ footer {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column; /* Cambiar a disposición de columna en pantallas pequeñas */
+    text-align: center; /* Alinear el texto al centro en pantallas pequeñas */
+  }
+  
+  .card-content {
+    width: 100%; /* Ancho completo en pantallas pequeñas */
+  }
+  
+  .card img {
+    margin-bottom: 10px; /* Reducir el espaciado inferior de la imagen en pantallas pequeñas */
+  }
+}
