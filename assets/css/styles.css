@@ -142,9 +142,6 @@ nav ul li {
 .burger-menu:hover {
   transform: rotateX(360deg); /* Gira 180 grados sobre el eje X cuando se hace hover */
 }
-
-
-
 /* Navbar ends */
 
 
@@ -238,10 +235,6 @@ color: var(--primary-color);
   font-style: italic; /* Estilo cursiva para resaltar */
 }
 
-/* .bio:hover {
-  transform: scale(1.02);
-  transition: transform 0.3s ease;
-} */
 
 .bio h1 {
   margin-bottom: var(--bottom-margin);
@@ -252,6 +245,7 @@ color: var(--primary-color);
   line-height: 1.8rem;
 }
 /* Hero section ends */
+
 
 /* More about */
 /* Estilos para la sección "Más sobre mí" */
@@ -315,6 +309,7 @@ li {
   height: 10.5rem;
 }
 /* Skills section ends */
+
 
 /* Projects section */
 .projects {
@@ -393,7 +388,6 @@ li {
 }
 
 
-
 /* Estilos al pasar el ratón sobre el enlace "Descubre más" */
 .project-link:hover {
   background-color: #0d3054;
@@ -419,9 +413,7 @@ li {
 
 /* Contacts section */
 .contact {
-  /* margin-top: 2rem; */
   padding: 2rem 1rem; /* Adjusted padding */
-  /* background: linear-gradient(45deg, #181818 0%, #2c3e50 50%, #181818 100%); */
 }
 
 .contact h2 {
@@ -565,7 +557,7 @@ footer {
 
 /* Estilo para los enlaces de información legal y política de privacidad */
 .footer-column p a {
-  color: #333; /* Cambia el color del texto según tus preferencias */
+  color: var(--bg-color-nav); /* Cambia el color del texto según tus preferencias */
   text-decoration: none;
 }
 
@@ -590,6 +582,28 @@ footer {
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
+}
+
+.container:hover {
+  transform: scale(1.02); /* Ajusta el valor según tu preferencia */
+  transition: transform 0.3s ease; /* Controla la velocidad de la transición */
+}
+
+
+.project-container:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+
+.project-container img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.skills-wrapper img:hover {
+  transform: scale(1.09);
+  transition: transform 0.3s ease;
 }
 
 .Efecto_Horizontal {
@@ -745,26 +759,3 @@ footer {
   }
 }
 
-.container:hover {
-  transform: scale(1.02); /* Ajusta el valor según tu preferencia */
-  transition: transform 0.3s ease; /* Controla la velocidad de la transición */
-}
-
-/* Aplica el efecto a los contenedores que desees */
-/* Por ejemplo, si quieres aplicarlo a todos los contenedores con la clase "project-container" */
-.project-container:hover {
-  transform: scale(1.02);
-  transition: transform 0.3s ease;
-}
-
-/* También puedes aplicarlo a otros elementos según tus necesidades */
-/* Por ejemplo, si deseas aplicarlo a las imágenes dentro de los contenedores */
-.project-container img:hover {
-  transform: scale(1.02);
-  transition: transform 0.3s ease;
-}
-
-.skills-wrapper img:hover {
-  transform: scale(1.09);
-  transition: transform 0.3s ease;
-}
