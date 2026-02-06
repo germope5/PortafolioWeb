@@ -4,13 +4,14 @@
   "description": "Espacio para mostrar mi perfil personal: Proyectos, Experiencia, Habilidades, Contacto y mucho más",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
-  },
+  "dev": "vite",
+  "build": "vite build"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "parcel": "^2.12.0",
+    "vite": "^7.3.1"
   }
 }
